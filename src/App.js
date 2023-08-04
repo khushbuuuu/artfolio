@@ -7,13 +7,11 @@ import { Contact } from './components/Contact';
 import {Footer} from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Aboutme } from './components/Aboutme';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <BrowserRouter basename="/app">
-      <Routes>
-    <Route path="/"/>{<div className="App">
+    <div className="App">
       
       <NavBarog/>
       <Banner/>
@@ -23,9 +21,7 @@ function App() {
      
       <Footer/>
      
-    </div>}
-    </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
